@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { css } from '@emotion/react';
+
+const link = css`
+  background-color: red;
+` 
 
 function App() {
   return (
@@ -15,6 +20,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          css={link}
         >
           Learn React
         </a>
